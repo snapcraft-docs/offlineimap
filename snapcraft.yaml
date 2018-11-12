@@ -13,12 +13,9 @@ apps:
     command: bin/offlineimap
 
 parts:
-  setup:
-    plugin: python
-    python-version: python2
-    python-packages: [six]
   offlineimap:
-    after: [setup]
     plugin: python
     python-version: python2
     source: .
+    stage-packages:
+      - python-six
