@@ -17,5 +17,6 @@ parts:
     plugin: python
     python-version: python2
     source: .
+    source-type: git
     stage-packages:
       - python-six
